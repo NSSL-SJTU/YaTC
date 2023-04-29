@@ -11,7 +11,7 @@ Besides, the extended version of our work has been submitted to IEEE/ACM Transac
 
 ## Overview
 
-<img src="YaTC.png" width="60%">
+<img src="YaTC.png">
 
 The training strategy of YaTC is divided into two stages: pre-training stage and fine-tuning stage.
 
@@ -21,7 +21,7 @@ The training strategy of YaTC is divided into two stages: pre-training stage and
 Path: ./output_dir/pretrained-model.pth
 ```
 
-## Fine-tune Datasets Information
+## Datasets Information
 
 ```
 Path: ./data
@@ -36,18 +36,18 @@ Path: ./data
 
 ## Code Information
 
-- data_process.py: process traffic pcap files of flows to MFR matires, the datasets was processed.
-- model_YaTC: the code of the pre-train model and the classifier model
-- pre-train.py: the code of pre-training
-- fine-tune.py: the code of fine-tuning
+- data_process.py: process traffic pcap files of flows to MFR matires
+- models_YaTC: the code of the classifier model
+- pre-train.py: the code of pre-training stage
+- fine-tune.py: the code of fine-tuning stage
 
-## Pre-train YaTC
+## Pre-training
 
 ```
 python pre-train.py --batch_size 128 --blr 1e-3 --steps 150000 --mask_ratio 0.9
 ```
 
-## Fine-tuning YaTC
+## Fine-tuning
 
 ```
 python fine-tune.py --blr 2e-3 --epochs 200 --data_path ./data/ISCXVPN2016_MFR --nb_classes 7
