@@ -27,7 +27,7 @@ Path: ./output_dir/pretrained-model.pth
 Path: ./data
 ```
 
-### number of classes
+### number of class
 
 - ISCXVPN2016_MFR: 7
 - ISCXTor2016_MFR: 8
