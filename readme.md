@@ -26,6 +26,7 @@ Path: ./output_dir/pretrained-model.pth
 ```
 Path: ./data
 ```
+Datasets [Link](https://drive.google.com/file/d/1znKQpZ704Bh4EkaHUBJwztYgflFXPnHI/view?usp=sharing)
 
 ### number of class
 
