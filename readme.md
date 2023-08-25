@@ -21,6 +21,8 @@ The training strategy of YaTC is divided into two stages: pre-training stage and
 Path: ./output_dir/pretrained-model.pth
 ```
 
+YaTC Pre-trained model [Link](https://drive.google.com/file/d/1wWmZN87NgwujSd2-o5nm3HaQUIzWlv16/view?usp=drive_link)
+
 ## Datasets Information
 
 ```
@@ -48,8 +50,6 @@ Datasets [Link](https://drive.google.com/file/d/1znKQpZ704Bh4EkaHUBJwztYgflFXPnH
 ```
 python pre-train.py --batch_size 128 --blr 1e-3 --steps 150000 --mask_ratio 0.9
 ```
-
-Link to pre-trained model: [YaTC_pretrained_model](https://drive.google.com/file/d/1wWmZN87NgwujSd2-o5nm3HaQUIzWlv16/view?usp=drive_link)
 
 ## Fine-tuning
 
