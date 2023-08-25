@@ -42,11 +42,14 @@ Datasets [Link](https://drive.google.com/file/d/1znKQpZ704Bh4EkaHUBJwztYgflFXPnH
 - pre-train.py: the code of pre-training stage
 - fine-tune.py: the code of fine-tuning stage
 
+
 ## Pre-training
 
 ```
 python pre-train.py --batch_size 128 --blr 1e-3 --steps 150000 --mask_ratio 0.9
 ```
+
+Link to pre-trained model: [SJTU-NSSL]([https://github.com/NSSL-SJTU "SJTU-NSSL"](https://drive.google.com/file/d/1wWmZN87NgwujSd2-o5nm3HaQUIzWlv16/view?usp=drive_link))
 
 ## Fine-tuning
 
