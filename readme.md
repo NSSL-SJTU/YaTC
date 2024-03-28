@@ -6,7 +6,6 @@ This repository contains the code for the paper:
 <br>
 In Thirty-Seventh AAAI Conference on Artificial Intelligence (AAAI 2023).
 
-Besides, the extended version of our work has been submitted to IEEE/ACM Transactions on Networking for consideration for publication.
 
 
 ## Overview
@@ -30,7 +29,15 @@ Path: ./data
 ```
 Datasets [Link](https://drive.google.com/file/d/1znKQpZ704Bh4EkaHUBJwztYgflFXPnHI/view?usp=sharing)
 
-### number of class
+### Dependency
+
+```
+torch=1.9.0
+numpy=1.19.5
+scikit-learn=0.24.2
+```
+
+### Number of class
 
 - ISCXVPN2016_MFR: 7
 - ISCXTor2016_MFR: 8
@@ -72,5 +79,3 @@ Email: mw.zhan@sjtu.edu.cn
 ## Reference
 
 R. Zhao, M. Zhan, X. Deng, Y. Wang, Y. Wang, G. Gui, and Z. Xue, ``Yet Another Traffic Classifier: A Masked Autoencoder Based Traffic Transformer with Multi-Level Flow Representation,'' in AAAI Conference on Artificial Intelligence (AAAI'23), Washington, United States, Feb. 7--14, 2023, pp. 1--8.
-
-The extended version of our work has been submitted to IEEE/ACM Transactions on Networking for consideration for publication.
