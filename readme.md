@@ -29,20 +29,20 @@ Path: ./data
 ```
 Datasets [Link](https://drive.google.com/file/d/1znKQpZ704Bh4EkaHUBJwztYgflFXPnHI/view?usp=sharing)
 
-### Dependency
-
-```
-torch=1.9.0
-numpy=1.19.5
-scikit-learn=0.24.2
-```
-
 ### Number of class
 
 - ISCXVPN2016_MFR: 7
 - ISCXTor2016_MFR: 8
 - USTC-TFC2016_MFR: 20
 - CICIoT2022_MFR: 10
+
+## Dependency
+
+```
+torch=1.9.0
+numpy=1.19.5
+scikit-learn=0.24.2
+```
 
 ## Code Information
 
