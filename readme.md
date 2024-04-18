@@ -39,6 +39,8 @@ Datasets [Link](https://drive.google.com/file/d/1znKQpZ704Bh4EkaHUBJwztYgflFXPnH
 ## Dependency
 
 ```
+python=3.8
+timm=0.3.2
 torch=1.9.0
 numpy=1.19.5
 scikit-learn=0.24.2
