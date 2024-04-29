@@ -12,7 +12,8 @@ def makedir(path):
     except Exception as E:
         pass
 
-def read_5hp_list(pcap_dir):
+
+def read_MFR_bytes(pcap_dir):
     packets = scapy.rdpcap(pcap_dir)
     data = []
     for packet in packets:
@@ -49,12 +50,11 @@ def MFR_generator(flows_pcap_path, output_path):
     makedir(output_path + "/test")
     classes = glob.glob(flows_pcap_path + "/*/*")
     for cla in tqdm(classes):
-        makedir(cla.replace(flows_pcap_path,output_path))
-    for filename in tqdm(filenames):
-        content = read_5hp_list(filename)
-        content = numpy.array([int(content[i:i + 2], 16) for i in range(0, len(content), 2)])
-        fh = numpy.reshape(content, (40, 40))
-        fh = numpy.uint8(fh)
+        makedir(cla.replace(flows_pcap_path, output_path))
+    for flow in tqdm(flows):
+        content = read_MFR_bytes(flow)
+        content = np.array([int(content[i:i + 2], 16) for i in range(0, len(content), 2)])
+        fh = np.reshape(content, (40, 40))
+        fh = np.uint8(fh)
         im = Image.fromarray(fh)
-        im.save(filename.replace('.pcap','.png').replace(flows_pcap_path,output_path))
-
+        im.save(flow.replace('.pcap', '.png').replace(flows_pcap_path, output_path))
